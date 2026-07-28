@@ -1,78 +1,164 @@
- * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: Arial, Helvetica, sans-serif;
-    }
+/* ==========================================
+   LifeHub Theme
+   AGilsonDesigns
+========================================== */
 
-    body {
-        background: #26242A;
-        color: #f3f4f6;
-        line-height: 1.6;
-    }
+:root{
 
-    header {
-        background: linear-gradient(135deg,#2563eb,#1e40af);
-        padding: 80px 20px;
-        text-align: center;
-    }
+    /* Main Colors */
+    --background: #26242A;
+    --surface: #34303C;
 
-    header h1 {
-        font-size: 3rem;
-        margin-bottom: 15px;
-    }
+    /* Branding */
+    --primary: #C7A7FF;
+    --secondary: #A9E6FF;
 
-    header p {
-        font-size: 1.2rem;
-        max-width: 700px;
-        margin: auto;
-    }
+    /* Text */
+    --text: #F4F1FA;
+    --text-muted: #D8D2E6;
 
-    main {
-        max-width: 900px;
-        margin: auto;
-        padding: 50px 20px;
-    }
+    /* Buttons */
+    --button: #C7A7FF;
+    --button-hover: #D8BEFF;
 
-    section {
-        margin-bottom: 50px;
-    }
+    /* Borders */
+    --border: #514B5D;
 
-    h2 {
-        color: #60a5fa;
-        margin-bottom: 15px;
-    }
+}
 
-    .buttons {
-        margin-top: 30px;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 15px;
-    }
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
 
-    .button {
-        text-decoration: none;
-        color: white;
-        background: #2563eb;
-        padding: 14px 24px;
-        border-radius: 8px;
-        transition: .3s;
-    }
+body{
 
-    .button:hover {
-        background: #1d4ed8;
-    }
+    background:var(--background);
+    color:var(--text);
+    line-height:1.6;
 
-    footer {
-        text-align: center;
-        padding: 30px;
-        color: #9ca3af;
-        border-top: 1px solid #374151;
-    }
+}
 
-   .logo{
-    width:170px;
+/* ================= Header ================= */
+
+header{
+
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        var(--secondary)
+    );
+
+    padding:80px 20px;
+    text-align:center;
+
+}
+
+.logo{
+
+    width:180px;
     max-width:70%;
     margin-bottom:25px;
-    filter:drop-shadow(0 0 12px rgba(0,0,0,.35));
+    filter:drop-shadow(0 0 18px rgba(0,0,0,.35));
+
+}
+
+header h1{
+
+    font-size:3rem;
+    margin-bottom:15px;
+    color:white;
+
+}
+
+header p{
+
+    font-size:1.2rem;
+    max-width:700px;
+    margin:auto;
+    color:white;
+
+}
+
+/* ================= Main ================= */
+
+main{
+
+    max-width:900px;
+    margin:auto;
+    padding:50px 20px;
+
+}
+
+section{
+
+    margin-bottom:55px;
+
+}
+
+h2{
+
+    color:var(--primary);
+    margin-bottom:15px;
+
+}
+
+p{
+
+    color:var(--text);
+
+}
+
+/* ================= Buttons ================= */
+
+.buttons{
+
+    margin-top:30px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+
+}
+
+.button{
+
+    text-decoration:none;
+
+    background:var(--button);
+    color:var(--background);
+
+    padding:14px 24px;
+
+    border-radius:10px;
+
+    font-weight:bold;
+
+    transition:0.25s ease;
+
+    box-shadow:0 6px 18px rgba(0,0,0,.18);
+
+}
+
+.button:hover{
+
+    background:var(--button-hover);
+
+    transform:translateY(-2px);
+
+}
+
+/* ================= Footer ================= */
+
+footer{
+
+    text-align:center;
+
+    padding:30px;
+
+    color:var(--text-muted);
+
+    border-top:1px solid var(--border);
+
 }
