@@ -149,6 +149,31 @@ p{
 
 }
 
+/* ================= Links ================= */
+
+a{
+
+    color:var(--primary);
+    text-decoration:none;
+
+}
+
+
+.email-link{
+
+    color:var(--primary);
+
+    font-weight:bold;
+
+}
+
+
+.email-link:hover{
+
+    color:var(--button-hover);
+
+}
+
 /* ================= Footer ================= */
 
 footer{
